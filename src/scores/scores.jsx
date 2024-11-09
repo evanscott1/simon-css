@@ -1,23 +1,38 @@
 import React from 'react';
 
-export function Login() {
+export function Scores() {
   return (
-    <main class="container-fluid bg-secondary text-center">
-      <div>
-        <h1>Welcome to Simon</h1>
-        <form method="get" action="play.html">
-          <div class="input-group mb-3">
-            <span class="input-group-text">@</span>
-            <input class="form-control" type="text" placeholder="your@email.com" />
-          </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text">🔒</span>
-            <input class="form-control" type="password" placeholder="password" />
-          </div>
-          <button type="submit" class="btn btn-primary">Login</button>
-          <button type="submit" class="btn btn-secondary">Create</button>
-        </form>
-      </div>
+    <main className="container-fluid bg-secondary text-center">
+      <table className="table table-warning table-striped-columns">
+        <thead className="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Score</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>도윤 이</td>
+            <td>34</td>
+            <td>May 20, 2021</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Annie James</td>
+            <td>29</td>
+            <td>June 2, 2021</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Gunter Spears</td>
+            <td>7</td>
+            <td>July 3, 2020</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
   );
 }

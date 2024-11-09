@@ -18,6 +18,6 @@ export function Login() {
           <button type="submit" class="btn btn-secondary">Create</button>
         </form>
       </div>
-    </main>
+    </main> 
   );
 }
